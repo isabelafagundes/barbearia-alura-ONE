@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html pt-br>
+	<head>
+		<meta charset="utf-8">
+		<title>Contato - Barbearia Alura</title>
+<!-- 		arquivo css padrão para resetar configurações padrão do navegador -->
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<header>
+			<div class="caixa">
+
+				<h1> <img src="logo.png" alt="Logo da Barbearia Alura"> </h1>
+
+					<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="produtos.html">Produtos</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+					</nav>
+			</div>
+		</header>
+
+		<main>
+
+			<form>
+
+				<!-- Label: info sobre a entrada de dados -->
+				<label for="nome-sobrenome">Nome e sobrenome:</label>
+				<!-- O id funciona como identificador para a label -->
+				<input type="text" name="" id="nome-sobrenome" class="input-padrao" required>
+				<!-- O required indica que este campo deve ser preenchido obrigatoriamente -->
+
+				<label for="email">Email:</label>
+				<input type="email" name="" id="email" class="input-padrao" required placeholder="exemplo@dominio.com">
+				<!-- O placeholder exibe uma frase até que alguém digite no input, como um asugestão -->
+
+				<label for="telefone">Telefone:</label>
+				<input type="tel" name="" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem:</label>
+				<!-- A tag textarea serve para inputs de textos mais longos, tanto que é uma tag que recebe conteúdo (cols e rows são as colunas e linhas) -->
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<!-- Usado no lugar da div, para elementos com o mesmo objetivos -->
+				<fieldset>
+					<!-- Legend usado no lugar do parágrafo na tag fieldset -->
+					<legend>Como você prefere nosso contato?</legend>
+					<!-- Para impedir que o usuário marque mais de um opção, todos os inputs radio devem possuir o mesmo 'Name' -->
+					<label for="radio-email"><input type="radio" name="radio-contato" value="email" id="radio-email">Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="radio-contato" value="telefone" id="radio-telefone">Telefone</label>
+
+					<label for="radio-whats"><input type="radio" name="radio-contato" value="whatsapp" id="radio-whats" checked>WhatsApp</label>
+					<!-- Com o checked, esta opção será marcada como sugestão para o usuário -->
+
+				</fieldset>
+
+				<div>
+
+					<!-- seletor de opções -->
+					<p>Em qual horário prefere ser atendido?</p>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+
+				</div>
+
+				<label for=""><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+
+				<!-- Botão para enviar os dados, o value faz com que o valor dentro do botão seja sempre o mesmo -->
+				<input type="submit" value="Enviar formulário" class="enviar">
+
+			</form>
+
+			<table>
+				
+				<!-- Tr = table row (linhas) -->
+				<!-- Thead = Tag para cabeçalho da tabela -->
+				<thead>
+				<tr>
+					<!-- Células de cabeçalho -->
+					<th>Dia</th>
+					<th>Horário</th>
+				</tr>	
+				</thead>
+
+				<tbody>
+					<tr>
+						<!-- Células -->
+						<td>Segunda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+
+					<tr>
+						<td>Terça</td>
+						<td>8h ~ 20h</td>
+					</tr>
+
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+				</tbody>
+
+			</table>
+
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+
+	</body>
+</html>
